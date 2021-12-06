@@ -67,7 +67,33 @@
 	<link rel="stylesheet" href="src/css/plugins.css">
 	<link rel="stylesheet" href="src/css/theme/yellow.css">
 	<link rel="stylesheet" href="src/css/font/thicccboi.css">
+	<script type="text/javascript">
 
+		jQuery(document).ready(function ($) {
+			if (($.cookie("keryar") + "").toString() == "undefined") {
+				$('#cookie_div').show();
+			}
+			$(".cookie-btn").click(function () {
+				$(".cookies-msg").hide();
+			});
+		});
+		function subsribe_email() {
+			if ($("#mce-EMAIL2").val() != "") {
+				$.post("https://forenzy.net/contact/subsribe_email", { email: $("#mce-EMAIL2").val() },
+					function (response, status) {
+						if (status == 'success') {
+							alert(response);
+							if (response == "Subscribe successfully, thank you") {
+								$("#yes_no_num_sectest").val('');
+							}
+						}
+						else {
+							alert(response);
+						}
+					});
+			}
+		}
+	</script>
 
 </head>
 
@@ -298,6 +324,34 @@
 			</div>
 			<!-- /.container -->
 		</section>
+		<div class="modal modal-popup fade modal-bottom-center" id="modal-01" tabindex="-1">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="modal-body p-6">
+						<div class="row">
+							<div class="col-md-12 col-lg-8 my-auto align-items-center">
+								<h4 class="mb-2">Cookie Policy</h4>
+								<p class="mb-0">We use cookies to personalize content to make our site easier for you to
+									use.
+								</p>
+							</div>
+							<!--/column -->
+							<div class="col-md-5 col-lg-4 text-lg-end mt-4 my-lg-auto">
+								<a href="javascript" class="btn btn-primary rounded-pill cookie-btn"
+									data-bs-dismiss="modal" aria-label="Close">I
+									Understand</a>
+							</div>
+							<!--/column -->
+						</div>
+						<!--/.row -->
+					</div>
+					<!--/.modal-body -->
+				</div>
+				<!--/.modal-content -->
+			</div>
+			<!--/.modal-dialog -->
+		</div>
+		<!--/.modal -->
 		<!-- /section -->
 		<section class="wrapper bg-light">
 			<div class="container pt-10 ">
@@ -704,7 +758,7 @@
 						</div>
 					</div>
 					<!--/column -->
-					
+
 					<div class="col-md-6 col-lg-4">
 						<div class="d-flex flex-row">
 							<div>
