@@ -11,9 +11,10 @@
 	<link rel="stylesheet" href="src/css/font/thicccboi.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 </head>
 
-<body>
+<body onload="test()">
 	<div class="content-wrapper">
 		<header class="wrapper bg-soft-primary">
 			<nav class="navbar fancy navbar-expand-lg navbar-light caret-none navbar-bg-light">
@@ -313,8 +314,19 @@
 									<!-- /column -->
 									<div class="col-md-6">
 										<div class="form-label-group mb-4">
+											<script type="text/javascript">
+												function test(){
+													var url_string = window.location.href
+												var url = new URL(url_string);
+												var c = url.searchParams.get("email");
+											
+												var em = document.getElementById('contact_email');
+											
+												em.setAttribute('value', c);
+												}
+											</script>
 											<input type="email" name="contact_email" id="contact_email"
-												class="form-control" placeholder="jane.doe@example.com"
+												class="form-control" placeholder="jane.doe@example.com" 
 												required="required" data-error="Valid email is required.">
 											<label for="form_email">Email *</label>
 											<div class="help-block with-errors"></div>

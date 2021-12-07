@@ -68,31 +68,32 @@
 	<link rel="stylesheet" href="src/css/theme/yellow.css">
 	<link rel="stylesheet" href="src/css/font/thicccboi.css">
 	<script type="text/javascript">
+		
 
-		jQuery(document).ready(function ($) {
-			if (($.cookie("keryar") + "").toString() == "undefined") {
-				$('#cookie_div').show();
-			}
-			$(".cookie-btn").click(function () {
-				$(".cookies-msg").hide();
-			});
-		});
-		function subsribe_email() {
-			if ($("#mce-EMAIL2").val() != "") {
-				$.post("https://forenzy.net/contact/subsribe_email", { email: $("#mce-EMAIL2").val() },
-					function (response, status) {
-						if (status == 'success') {
-							alert(response);
-							if (response == "Subscribe successfully, thank you") {
-								$("#yes_no_num_sectest").val('');
-							}
-						}
-						else {
-							alert(response);
-						}
-					});
-			}
-		}
+		// jQuery(document).ready(function ($) {
+		// 	if (($.cookie("keryar") + "").toString() == "undefined") {
+		// 		$('#cookie_div').show();
+		// 	}
+		// 	$(".cookie-btn").click(function () {
+		// 		$(".cookies-msg").hide();
+		// 	});
+		// });
+		// function subsribe_email() {
+		// 	if ($("#mce-EMAIL2").val() != "") {
+		// 		$.post("https://forenzy.net/contact/subsribe_email", { email: $("#mce-EMAIL2").val() },
+		// 			function (response, status) {
+		// 				if (status == 'success') {
+		// 					alert(response);
+		// 					if (response == "Subscribe successfully, thank you") {
+		// 						$("#yes_no_num_sectest").val('');
+		// 					}
+		// 				}
+		// 				else {
+		// 					alert(response);
+		// 				}
+		// 			});
+		// 	}
+		// }
 	</script>
 
 </head>
@@ -1127,16 +1128,15 @@
 							<div class="newsletter-wrapper">
 								<!-- Begin Mailchimp Signup Form -->
 								<div id="mc_embed_signup2">
-									<form
-										action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
-										method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form"
-										class="validate dark-fields" target="_blank" novalidate>
+									<!-- <form
+										method="post" id="mc-embedded-subscribe-form2"  name="mc-embedded-subscribe-form"
+										class="validate dark-fields" target="_blank" novalidate> -->
 										<div id="mc_embed_signup_scroll2">
 											<div class="mc-field-group input-group">
-												<input type="email" value="" name="EMAIL"
+												<input type="email" name="EMAIL"
 													class="required email form-control" placeholder="Email Address"
-													id="mce-EMAIL2">
-												<input type="submit" value="Join" name="subscribe"
+													id="EMAIL">
+												<input type="submit" value="Join" name="subscribe" onclick="test()"
 													id="mc-embedded-subscribe2" class="btn btn-primary">
 											</div>
 											<div id="mce-responses2" class="clear">
@@ -1151,7 +1151,14 @@
 													tabindex="-1" value=""></div>
 											<div class="clear"></div>
 										</div>
-									</form>
+										<script type="text/javascript">
+											function test(){
+												var em = document.getElementById('EMAIL').value;
+												window.open('quickcode.html?email='+em,"_self");	
+											}											
+										</script>
+									<!-- </form> -->
+								
 								</div>
 								<!--End mc_embed_signup-->
 							</div>
@@ -1239,6 +1246,7 @@
 			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
 		</svg>
 	</div>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 		crossorigin="anonymous"></script>
