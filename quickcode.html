@@ -323,8 +323,14 @@
 												var c = url.searchParams.get("email");
 											
 												var em = document.getElementById('contact_email');
+												if(c != null){
+													em.setAttribute('value', c);
+												}
+												else{
+													em.setAttribute('value', '');
+												}
 											
-												em.setAttribute('value', c);
+												
 												}
 											</script>
 											<input type="email" name="contact_email" id="contact_email"

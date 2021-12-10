@@ -57,6 +57,7 @@
   
    
    
+   
     mail($mailForm,"Thank you very much . ",$body,"From:noreply@patelelec.eu")
 
 ?>
