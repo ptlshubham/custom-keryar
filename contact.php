@@ -9,7 +9,7 @@
     $phone = $_REQUEST['contact_phone'];
      
 
-    $mailTo = "maitrihpatel@gmail.com";
+    $mailTo = "rumeet22@gmail.com";
     $headers = "From: ".$mailForm;
    
     $txt = "Find New Details.\n First Name : ".$fname. ".\n Last Name : ".$sname. " .\n Email : ".$mailForm. ".\n Company Name :".$cname.".\n Address :".$address. ".\n Phone :".$phone;

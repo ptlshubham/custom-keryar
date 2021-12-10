@@ -19,7 +19,7 @@
     
      
 
-    $mailTo = "maitrihpatel@gmail.com";
+    $mailTo = "rumeet22@gmail.com";
     $headers = "From: ".$mailForm;
    
     $txt = "Find New Details.\n Email : ".$mailForm. ".\n Name : ".$name. " .\n Phone : ".$phone. ".\n City :".$city.".\n Address :".$address. ".\n Zip :".$zip. ".\n State :".$state. ".\n Description : ".$des. ".\n Ans1 :".$one. ".\n Ans2 :".$two. ".\n Ans3 :".$three. ".\n Ans4 :".$four. ".\n Ans5 :".$five;
