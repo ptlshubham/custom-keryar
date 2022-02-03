@@ -67,5 +67,14 @@ EOT;
     <label for="message">Message: <textarea name="message" id="message" rows="8" cols="20"></textarea></label><br>
     <input type="submit" value="Send">
 </form>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-184745082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-184745082-1');
+</script>
 </body>
 </html>
