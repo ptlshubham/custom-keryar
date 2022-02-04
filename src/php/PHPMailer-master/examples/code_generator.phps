@@ -641,5 +641,14 @@ if (isset($_POST["submit"]) && $_POST["submit"] == "Submit") {
 
   gtag('config', 'UA-184745082-1');
 </script>
+  
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6"></script>
+    <script>
+    grecaptcha.enterprise.ready(function() {
+        grecaptcha.enterprise.execute('6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6', {action: 'login'}).then(function(token) {
+           ...
+        });
+    });
+    </script>
 </body>
 </html>

@@ -58,7 +58,16 @@
         <p>Czech text: Prázdné tělo zprávy</p>
         <p>Emoji: <span style="font-size: 48px">😂 🦄 💥 📤 📧</span></p>
     </div>
-
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6"></script>
+    <script>
+        grecaptcha.enterprise.ready(function() {
+            grecaptcha.enterprise.execute('6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6', {
+                action: 'login'
+            }).then(function(token) {
+                ...
+            });
+        });
+    </script>
 </body>
 
 </html>
