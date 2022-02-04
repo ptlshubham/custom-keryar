@@ -35703,3 +35703,14 @@ footer.bg-dark.angled.upper-start:before {
 .wrapper.bg-soft-primary.angled.upper-end:before {
     border-right-color: #effaff !important;
 }
+
+
+/* =============Custome CSS =========*/
+
+.fontnormal {
+    font-weight: normal !important
+}
+
+.dnd {
+    display: none;
+}

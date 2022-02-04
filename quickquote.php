@@ -43,7 +43,7 @@
 
      
 
-    $mailTo = "rumeet22@gmail.com";
+    $mailTo = "hello@keryar.com";
     $headers = "From: ".$mailForm;
    
     // $txt = "Find New Details.\n First Name : ".$fname. ".\n Last Name : ".$sname. " .\n Email : ".$mailForm. ".\n Company Name :".$cname.".\n Address :".$address. ".\n Phone :".$phone. "\n Job :".$job. "\n Value 1 :".$mian. "\n Value 2 :".$sub;
