@@ -28759,7 +28759,7 @@ button.hamburger.animate.active:after {
 .progress-wrap {
     position: fixed;
     right: 1.5rem;
-    bottom: 1.5rem;
+    bottom: 4.5rem;
     width: 2.3rem;
     height: 2.3rem;
     cursor: pointer;
