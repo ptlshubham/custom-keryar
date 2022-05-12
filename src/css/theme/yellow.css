@@ -22107,7 +22107,13 @@ figure img {
         position: absolute !important;
     }
 }
-
+.bg-soft-img {
+    background-image: url(../../img/intern.png);
+    background-position: center center;
+    background-repeat:repeat;
+    background-attachment:scroll;
+    background-size: cover;
+}
 .bg-soft-primary {
     background-color: #fffaf2 !important;
 }
