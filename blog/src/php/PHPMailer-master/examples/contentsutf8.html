@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PHPMailer Test</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184745082-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-184745082-1');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '954543398569314');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=954543398569314&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <div style="width: 640px; font-family: Arial, Helvetica, sans-serif; font-size: 11px;">
+        <h1>This is a test of PHPMailer.</h1>
+        <div align="center">
+            <a href="https://github.com/PHPMailer/PHPMailer/"><img src="images/phpmailer.png" height="90" width="340" alt="PHPMailer rocks"></a>
+        </div>
+        <p>This example uses <strong>HTML</strong>.</p>
+        <p>Chinese text: 郵件內容為空</p>
+        <p>Russian text: Пустое тело сообщения</p>
+        <p>Armenian text: Հաղորդագրությունը դատարկ է</p>
+        <p>Czech text: Prázdné tělo zprávy</p>
+        <p>Emoji: <span style="font-size: 48px">😂 🦄 💥 📤 📧</span></p>
+    </div>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6"></script>
+    <script>
+        grecaptcha.enterprise.ready(function() {
+            grecaptcha.enterprise.execute('6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6', {
+                action: 'login'
+            }).then(function(token) {
+                ...
+            });
+        });
+    </script>
+</body>
+
+</html>
