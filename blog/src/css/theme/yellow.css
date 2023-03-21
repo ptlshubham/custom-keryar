@@ -27643,6 +27643,9 @@ fieldset:disabled .btn.btn-circle {
         background: none !important;
         box-shadow: none !important;
     }
+    .subimage{
+        width: 100% !important;
+    }
 }
 
 .navbar.fixed {
