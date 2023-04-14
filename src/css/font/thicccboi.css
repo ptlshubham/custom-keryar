@@ -145,3 +145,62 @@ h6,
   font-size: 2.05rem; }
   .counter-wrapper .counter.counter-lg {
     font-size: 2.25rem; }
+
+.solid-mono.text-fuchsia .fill-secondary {
+      fill: #f5c3e1;
+  }
+
+  .solid-mono.text-fuchsia .fill-primary {
+    fill: #e668b3;
+}
+
+.solid-mono.text-violet .fill-primary {
+  fill: #a07cc5;
+}
+
+.solid-mono.text-violet .fill-primary {
+  fill: #a07cc5;
+}
+.solid-mono.text-violet .fill-secondary {
+  fill: #d9cbe8;
+}
+
+.solid-mono.text-orange .fill-primary {
+  fill: #f78b77;
+}
+
+.solid-mono.text-orange .fill-secondary {
+  fill: #fcd1c9;
+}
+
+.solid-mono.text-green .fill-secondary {
+  fill: #b5e7d9;
+}
+
+.solid-mono.text-green .fill-primary {
+  fill: #45c4a0;
+}
+
+.ppc-ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.ppc-ul li:before {
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  border-left: 2px solid #f46b25;
+  border-bottom: 2px solid #f46b25;
+  content: '';
+  left: 0;
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
