@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="JYShcZdmhxRSLnDtmyNmjqC1M7HduQT6tMXUHnhjU6s">
+    <meta name="keywords"
+        content="keryar , web application , PWA , Progressive Web Apps examples , Progressive Web Application" />
+    <meta name="description"
+        content="Keryar is a web development and design company specializing in progressive web apps. We have a wide range of experience in developing and designing websites for businesses of all sizes.">
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <title>PWAs (Progressive Web Application)—what are they?
+    </title>
+    <link rel="canonical" href="https://keryar.com/blog/Progressive-Web-Application" />
+    <link rel="stylesheet" href="src/css/plugins.css">
+    <link rel="stylesheet" href="src/css/theme/yellow.css">
+    <link rel="stylesheet" href="src/css/font/thicccboi.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184745082-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-184745082-1');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '954543398569314');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=954543398569314&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+            <nav class="navbar fancy navbar-expand-lg navbar-light caret-none navbar-bg-light">
+                <div class="container">
+                    <div
+                        class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+                        <div class="navbar-brand w-100">
+                            <a href="https://keryar.com/"><img src="src/img/logo.png" alt="logo" /></a>
+                        </div>
+                        <div class="navbar-collapse offcanvas-nav d-lg-flex mx-lg-auto">
+                            <div class="offcanvas-header d-lg-none d-xl-none">
+                                <a href="https://keryar.com/"><img src="src/img/klogo.png"
+                                        srcset="src/img/klogo.png" alt="keryar_logo" /></a>
+                                <button type=" button"
+                                    class="btn-close btn-close-white offcanvas-close offcanvas-nav-close"
+                                    aria-label="Close"></button>
+                            </div>
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle fontnormal"
+                                        href="#!">Technology</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/website.html">Website Development</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/webapplication.html">Web Application</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/mobileapp.html">Mobile Application</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/ecomm.html">Ecommerce</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/cyber.html">Cyber
+                                                Security</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/uiux.html">UI/UX</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/technology.html">Languages</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle fontnormal"
+                                        href="#!">Growth</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/digital.html">Digital Marketing</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/smm.html">Social
+                                                Media Marketing</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/seo.html">SEO</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/gam.html">Google
+                                                Ads Management</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/lead.html">Lead
+                                                Generation</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/graphic.html">Graphic Design</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle fontnormal"
+                                        href="#!">Management</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/cservices.html">Clould Services</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/ecoms.html">Ecommerce Services</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/hservices.html">Hosting Services</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item "><a class="nav-link fontnormal" href="https://keryar.com/school.html">Product</a>
+
+                                </li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active"
+                                        href="#!">KERYAR</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/about.html">About</a></li>
+                                        <li class="nav-item"><a class="dropdown-item active"
+                                                href="https://keryar.com/blog.html">Blog</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/client.html">Clients</a></li>
+
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/faq.html">FAQ</a>
+                                        </li>
+
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/testi.html">Testimonials</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/portfolio.html">Portfolio</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle fontnormal"
+                                        href="#!">Connect</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/general.html">General Queries</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/joinus.html">Join
+                                                us</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/intern.html">Internship</a></li>
+                                        <li class="nav-item"><a class="dropdown-item fontnormal"
+                                                href="https://keryar.com/quickcode.html">Get Quick quote</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <!-- /.navbar-nav -->
+                        </div>
+
+                        <!-- /.navbar-collapse -->
+                        <div class="navbar-other w-100 d-flex ms-auto">
+                            <ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
+                                <li class="nav-item"><a class="nav-link" data-toggle="offcanvas-info"><i
+                                            class="uil uil-info-circle"></i></a></li>
+
+                                <li class="nav-item">
+                                    <!-- <div class="navbar-hamburger d-lg-none d-xl-none ms-auto"><button
+											class="hamburger animate plain"
+											data-toggle="offcanvas-nav"><span></span></button></div> -->
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+                                <li class="nav-item d-none d-md-block">
+                                    <nav class="nav social social-muted justify-content-end text-end">
+                                        <a href="https://twitter.com/KeryarC" target="_blank"><i
+                                                class="uil uil-twitter"></i></a>
+                                        <a href="https://www.facebook.com/keryar22/" target="_blank"><i
+                                                class="uil uil-facebook-f"></i></a>
+                                        <a href="https://in.linkedin.com/company/keryar" target="_blank"><i
+                                                class="uil uil-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/keryar_com/?hl=en" target="_blank"><i
+                                                class="uil uil-instagram"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <div class="navbar-hamburger"><button class="hamburger animate plain"
+                                            data-toggle="offcanvas-nav"><span></span></button></div>
+                                </li>
+                            </ul>
+                            <!-- /.navbar-nav -->
+                        </div>
+                    </div>
+                    <!-- /.navbar-collapse-wrapper -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+            <div class="offcanvas-info text-inverse">
+                <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-info-close"
+                    aria-label="Close"></button>
+                <a href="https://keryar.com/"><img src="src/img/klogo.png" srcset="src/img/klogo.png"
+                        alt="keryar_logo" style="margin-left: -1.5rem !important;" /></a>
+                <div class="mt-4 widget">
+                    <p>KERYAR delivers top-tier IT solutions to all types of businesses.</p>
+                </div>
+                <!-- /.widget -->
+                <div class="widget">
+                    <h4 class="widget-title text-white mb-3">Contact Info</h4>
+                    <address>
+                        <a href="mailto:hello@keryar.com" class="link-body">hello@keryar.com</a> <br> <br>
+                    <a href="" class="link-body"> India </a> <br>
+                        Vaibhav Commercial Complex, 
+                         Block C, <br>behind TVS-DownTown Motors, Anand, <br> Gujarat 388001<br />
+                        <a href="tel:+91-99132-62167" class="link-body">+91-99132-62167</a><br>
+                       <br>
+                       504, Aalos Euphoria,  
+                       Besides Gota Flyover, <br>S. G. Highway, <br>  Ahmedabad-382481<br />
+                      <br>
+                        <br>
+                       <a href="" class="link-body"> USA </a> <br>
+                       15217 NE 16th PL, Bellevue, WA 98007<br> United States<br>
+                        <a href="tel:+18324263436" class="link-body">+1 (832) 4263436</a>
+                        <br>
+                        <br>
+                        <a href="" class="link-body"> United Kingdom </a> <br>
+                        KERYAR LIMITED,<br>
+                        246, walton road ,east london,<br> United Kingdom, E12 5RL<br>
+                         <a href="tel:+447436253870" class="link-body">+44 7436 253870</a>
+                    </address>
+                </div>
+                <!-- /.widget -->
+                <!-- /.widget -->
+                <div class="widget">
+                    <h4 class="widget-title text-white mb-3">Learn More</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/keryar_com/?hl=en" target="_blank">Our Story</a></li>
+                        <!-- <li><a href="#">Terms of Use</a></li> -->
+
+                        <li><a href="https://keryar.com/privacy.html">Privacy Policy</a></li>
+                        <li><a href="https://keryar.com/general.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- /.widget -->
+                <div class="widget">
+                    <h4 class="widget-title text-white mb-3">Follow Us</h4>
+                    <nav class="nav social social-white">
+                        <a href="https://twitter.com/KeryarC" target="_blank"><i class="uil uil-twitter"></i></a>
+                        <a href="https://www.facebook.com/keryar22/" target="_blank"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a href="https://in.linkedin.com/company/keryar" target="_blank"><i
+                                class="uil uil-linkedin"></i></a>
+                        <a href="https://www.instagram.com/keryar_com/?hl=en" target="_blank"><i
+                                class="uil uil-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCH42x8APHd3NVp-eSHs_mpw" target="_blank"><i
+                                class="uil uil-youtube"></i></a>
+                    </nav>
+                    <!-- /.social -->
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /.offcanvas-info -->
+        </header>
+
+
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+            <div class="container pt-10 pb-19 pt-md-14 pb-md-20 text-center">
+                <div class="row">
+                    <div class="col-md-10 col-xl-8 mx-auto">
+                        <div class="post-header">
+
+                            <!-- /.post-category -->
+                            <h1 class="display-1 mb-4">PWAs (Progressive Web Application)—what are they?
+
+                            </h1>
+
+                            <!-- /.post-meta -->
+                        </div>
+                        <!-- /.post-header -->
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+        <section class="wrapper bg-light">
+            <div class="container pb-14 pb-md-16">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="blog single mt-n17">
+                            <div class="card">
+                                <figure class="card-img-top"><img src="src/img/17.jpg" alt="blog_detail" />
+                                </figure>
+                                <div class="card-body">
+                                    <div class="classic-view">
+                                        <article class="post">
+                                            <div class="post-content mb-5">
+                                                <p>It's been years since the first smartphone came out. The era of native apps began. 
+                                                    Apps are still a big part of our everyday lives, and many business owners have 
+                                                    asked themselves more than once, "Should we have an app?" That question can 
+                                                    only be answered with "it depends." Building and maintaining a native app is 
+                                                    a lot of work and usually costs a lot of money. There is a better choice, though. 
+                                                    The progressive <a href="https://keryar.com/webapplication" target="_blank">web application </a> , or PWA, gives you the best of both a native app 
+                                                    and the technology we use on the web.
+
+                                                </p>
+                                                <h5> What is a PWA?</h5>
+                                                <p>
+                                                    A progressive web app is what PWA stands for. 
+                                                    This app was made with HTML, CSS, and JavaScript, 
+                                                    which we all know and love, but it has the look and 
+                                                    feel of a native app and works just as well. With a few smart additions, 
+                                                    almost any website can be turned into a progressive web app. This means 
+                                                    that you can make a PWA much faster than you can make a native app,
+                                                     which is hard to make. Plus, you can offer all the features of native apps,
+                                                     like push notifications, offline support, and a lot more.
+                                                </p>
+                                                <h2 class="h1 mb-4">
+                                                </h2>
+                                                <p>There are a lot of sites on the web that are progressive web apps.
+                                                    Think about twitter.com as an example. If you go to that website on your phone,
+                                                     you can add it to the home screen. Now, when you open the Twitter page you saved,
+                                                      you'll see that it looks and works just like a native app. There isn't even 
+                                                      a browser window. It doesn't matter if you run it on an iPhone or an Android phone. 
+                                                      Just sign in, and you're all set. This is one of the best reasons to build your
+                                                       web app with a PWA in mind.
+
+
+                                                </p>
+                                                <p><!-- <a
+                                                        href="https://keryar.com/bdetail_6"> SEO strategy</a>.-->
+                                                </p>
+                                                <p>PWAs are gaining popularity. Many big sites, like Starbucks.
+                                                    com, Pinterest.com, the Washington Post, and Uber.com, 
+                                                    are progressive web apps (PWAs). You can add them to your home screen,
+                                                     and they work just like their native apps.
+
+                                                </p>
+                                                <h5>How does it work?</h5>
+                                                <p>Technically, it is a website that can be installed.
+                                                    A service worker lets scripts run in the background, 
+                                                    even when the user isn't looking at the app. A PWA has
+                                                    a special manifest that tells the browser what it needs 
+                                                    to know to cache certain resources. This makes the app 
+                                                    work without an internet connection.
+
+                                                </p>
+                                                <!--<h2 class="h1 mb-4">SEO Trend #2: Rich Results
+                                                </h2>-->
+                                                <p> When you go to a website with a manifest like this,
+                                                     you'll see a "Add to home screen" prompt. When you 
+                                                     click the "Accept" button, a PWA will appear on 
+                                                     your home screen just like a native app. Now that
+                                                     it has been cached, you can use it without an internet connection.
+
+                                                </p>
+                                                <h5>Why a Progressive Web App is a Good Idea?
+                                                </h5>
+                                                <p><h5>Discoverability:</h5> People can find your app outside of
+                                                   app stores and marketplaces by using search engines 
+                                                   like Google to crawl PWAs. This is a big deal, since 
+                                                   the Apple App Store has almost 2 million apps and Google Play 
+                                                   is getting close to 3 million.
+
+                                                </p>
+                                                <p>Reliability: PWAs can work even when there's no network or on
+                                                   slow networks like 2G. They don't need to be connected to a network to work.
+                                                </p>
+                                                <p><h5>Responsiveness:</h5> PWAs can be used on all devices, like desktops, laptops, tablets, 
+                                                    and phones, even though they only have one codebase. There is no cost to make or 
+                                                    keep up multiple apps.
+                                                </p>
+                                                <p><h5>Operating system agnostic:</h5> It doesn't matter if you have an Android phone or an Apple phone; 
+                                                    you'll be able to access a PWA.
+                                                    
+                                                <p><h5>Engagement:</h5> With a PWA, you can let people know when there is new content or to keep them engaged.</p>
+                                               
+                                                <p><h5>Linkability:</h5> PWAs can link to an app at a URL without a complicated installation process or app market. Send the URL, just like you would with any other website.
+
+                                                </p>
+                                                <p><h5>Better performance:</h5> PWAs give users the best possible performance, including animations that move faster and more smoothly.
+
+                                                </p>
+                                                <p><h5>Installability:</h5> A PWA can be found on the home page of a device or in an app launcher. It can be downloaded straight from a website, so you don't have to go through app stores or marketplaces.
+                                                </p>
+                                                <p><h5>PWA technology:</h5> What do PWAs need to work?
+                                                </p>
+                                                <p>To set up a <b>Progressive Web App framework,</b> you must make sure of a few things:
+                                                </p>
+                                                <h5>A secure connection (HTTPS)
+                                                </h5>
+                                                <p>For the PWA to work, you need to provide a secure server with an HTTPS connection. This is how you can keep user information safe and add an extra layer of security to your website.
+                                                </p>
+                                                <h5>Service staff
+                                                </h5>
+                                                <p>This is a key part of PWA technology that helps figure out how to handle network requests. A service worker is a JavaScript file that you add to your codebase on the client side. 
+                                                    This file works in the background to make your website look like an app.
+                                                </p>
+                                                <h2 class="h1 mb-4"> PWA Manifest file
+                                                    <br>
+                                                   
+                                                </h2>
+                                                <p>You need to make a simple JSON file called a "PWA manifest file." This file tells the browser how your PWA will look and act once it's on a user's mobile device.
+
+                                                </p>
+                                                <p>It has basic information like the name of the app, and the icons or colors it uses, and is meant to make the app feel more like a native app.
+                                                </p>
+                                                <p>
+                                                    <h5>Important:</h5> Google Chrome needs the PWA manifest file to show the "Add to Screen" prompt.
+                                                </p>
+                                                <h5>Example of a Progressive Web App</h5>
+                                                <p>
+                                                    Today, there are a lot of Progressive Web Apps, so there are a lot of great<b> Progressive Web Apps examples.</b> Here are some of the most well-known PWAs that you probably already know.
+
+                                                </p>
+                                                <p>
+                                                    <h5>Google Maps:</h5> Who hasn't used the Google Maps app? You can get live navigation, and you can also use it when you're not connected to the internet, which is a huge benefit in some rural areas.
+
+                                                </p>
+                                                <p>
+                                                <h5>Pinterest:</h5> When Pinterest saw that their website was slow and not getting many conversions, they made a PWA. It helped with performance, engagement, and getting people to click.
+
+                                                </p>
+                                                <p>
+                                                   <h5> Forbes:</h5> a top business magazine in the US, decided to step up their game by making a PWA to improve the experience for mobile users. It sped up the time it took to load and made their mobile engagement rates double.
+
+                                                </p>
+                                                <p>
+                                                <h5>Starbucks:</h5> Use the Starbucks PWA on any device to order your favourite drink.
+
+                                                </p>
+                                                <p>
+                                                <h5>Uber:</h5> This PWA has full integration, allowing users to use it quickly and easily online and offline.
+
+                                                </p>
+                                                <p>
+                                                <h5>Google Photos:</h5> It lets you look at your photos online or when you're not connected to the internet. It also lets you back up your most important memories.
+
+                                                </p>
+                                                <p>
+                                                <h5>Spotify:</h5> It is a well-known music streaming service that has both a native app and a PWA, and the PWA is growing quickly.
+                                                </p>
+                                                <p>
+                                                   <h5> Flipkart:</h5> It is a smooth and fast PWA where you can read hand-picked news stories.
+
+                                                </p>
+                                                <h5>Find out more about Keryar's PWA Framework
+                                                </h5>
+                                                <p>
+                                                   <a href="https://keryar.com/" target="_blank">Keryar’s</a> <b> (website development company in Anand)</b> Progressive Web App gives eCommerce vendors who want to close their mobile gap a lot of useful business tools:
+                                                     <li>Keryar PWA is much smaller than native apps, so it loads faster, works better on low-bandwidth networks, and takes up less space on a user's device.</li> 
+                                                     <li>PWAs keep data in sync even when the user is not using the app. The app always has the most recent version, and content is served right away.</li>
+                                                     <li>In contrast to native apps, <b>Keryar</b> can be fully searched and indexed. Also, every page is easy to bookmark and share.</li> 
+                                                    
+                                                       Because PWA makes shopping responsive and smooth, there's no need to make apps for different web browsers and platforms.
+
+                                                </p>
+                                              
+                                            </div>
+
+                                           
+
+                                    </div>
+                                    <!-- /.post-content -->
+                                    <div
+                                        class="post-footer d-md-flex flex-md-row justify-content-md-between align-items-center mt-8">
+                                        <div>
+                                            <ul class="list-unstyled tag-list mb-0">
+                                                <li><a href="https://keryar.com/bdetail_4"
+                                                        class="btn btn-soft-ash btn-sm rounded-pill mb-0"> web application</a>
+                                                </li>
+                                                <li><a href="https://keryar.com/seo"
+                                                        class="btn btn-soft-ash btn-sm rounded-pill mb-0">
+                                                        PWA</a>
+                                                </li>
+                                                <li><a href="https://keryar.com/bdetail_6"
+                                                        class="btn btn-soft-ash btn-sm rounded-pill mb-0">Progressive Web Apps examples ,Progressive Web Application
+
+                                                        </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- /.post-footer -->
+                                </article>
+                                <!-- /.post -->
+                            </div>
+                            <!-- /.classic-view -->
+
+                            <!-- /.author-info -->
+
+                            <h3 class="mb-6">You Might Also Like</h3>
+                            <div class="carousel owl-carousel blog grid-view mb-16" data-margin="30" data-dots="true"
+                                data-autoplay="false" data-autoplay-timeout="5000"
+                                data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "2"}}'>
+                                <div class="item">
+                                    <article>
+                                        <figure class="overlay overlay1 hover-scale rounded mb-5">
+                                            <a
+                                                href="https://keryar.com/Evolving-digital-marketing-with-the-founder-of-KERYAR,-Rumit.html">
+                                                <img src="src/img/5.jpeg" alt="email_marketing" /></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">Read More</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="post-header">
+
+                                            <!-- /.post-category -->
+                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                    href="https://keryar.com/Evolving-digital-marketing-with-the-founder-of-KERYAR,-Rumit.html">Evolving
+                                                    the Digital & IT world with the founder of KERYAR,
+                                                    Rumit Vaghela.
+                                                </a></h2>
+                                        </div>
+                                        <!-- /.post-header -->
+
+                                        <!-- /.post-footer -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item -->
+                                <div class="item">
+                                    <article>
+                                        <figure class="overlay overlay1 hover-scale rounded mb-5">
+                                            <a href="https://keryar.com/Choose-the-web-app-or-website.html">
+                                                <img src="src/img/choose.jpg" alt="email_marketing" /></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">Read More</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="post-header">
+
+                                            <!-- /.post-category -->
+                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                    href="https://keryar.com/Choose-the-web-app-or-website.html">Which is better
+                                                    for my company, the web application or the website?
+                                                </a></h2>
+                                        </div>
+                                        <!-- /.post-header -->
+
+                                        <!-- /.post-footer -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item -->
+                                <div class="item">
+                                    <article>
+                                        <figure class="overlay overlay1 hover-scale rounded mb-5">
+                                            <a href="https://keryar.com/bdetail_3.html">
+                                                <img src="src/img/photos/meta_1.jpg" alt="fb_to_meta" /></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">Read More</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="post-header">
+
+                                            <!-- /.post-category -->
+                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                    href="https://keryar.com/bdetail_3.html"> What is Meta? And what does the
+                                                    Facebook name change mean for us?
+                                                </a></h2>
+                                        </div>
+                                        <!-- /.post-header -->
+
+                                        <!-- /.post-footer -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item -->
+                                <div class="item">
+                                    <article>
+                                        <figure class="overlay overlay1 hover-scale rounded mb-5">
+                                            <a href="https://keryar.com/bdetail_4.html">
+                                                <img src="src/img/photos/seo1.png" alt="mistake_seo" /></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">Read More</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="post-header">
+
+                                            <!-- /.post-category -->
+                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                    href="https://keryar.com/bdetail_4.html">Top 5 common SEO copywriting mistakes
+                                                    and how to stop doing them</a></h2>
+                                        </div>
+
+                                        <!-- /.post-footer -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item -->
+                                <div class="item">
+                                    <article>
+                                        <figure class="overlay overlay1 hover-scale rounded mb-5">
+                                            <a href="https://keryar.com/bdetail_5.html">
+                                                <img src="src/img/photos/chatbot1.jpeg" alt="chatbot" /></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">Read More</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="post-header">
+
+                                            <!-- /.post-category -->
+                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                    href="https://keryar.com/bdetail_5.html">How can chatbots increase sales and
+                                                    improve customer service?</a></h2>
+                                        </div>
+                                        <!-- /.post-header -->
+
+                                        <!-- /.post-footer -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item -->
+
+                                <div class="item">
+                                    <article>
+                                        <figure class="overlay overlay1 hover-scale rounded mb-5">
+                                            <a href="https://keryar.com/bdetail_6.html">
+                                                <img src="src/img/photos/seo2.png" alt="mistake_seo" /></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">Read More</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="post-header">
+
+                                            <!-- /.post-category -->
+                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                    href="https://keryar.com/bdetail_6.html">How to create an SEO strategy for
+                                                    2022.
+                                                    The tricks you need to know.
+                                                </a></h2>
+                                        </div>
+
+                                        <!-- /.post-footer -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item -->
+                            </div>
+                            <!-- /.owl-carousel -->
+
+
+                            <!-- /.comment-form -->
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.blog -->
+            </div>
+            <!-- /column -->
+    </div>
+    <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    </section>
+    <!-- /section -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="bg-gradient-reverse-primary">
+        <div class="container pb-13 pb-md-15">
+            <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-300 mb-14" data-image-src="./src/img/photos/bg2.jpg">
+                <div class="card-body p-10 p-xl-12">
+                  <div class="row text-center">
+                    <div class="col-xl-11 col-xxl-9 mx-auto">
+                      <h2 class="fs-16 text-uppercase text-white mb-3">Join Our Community</h2>
+                      <h3 class="display-3 mb-8 px-lg-8 text-white">We are <span class="underline-3 style-2 yellow">trusted</span> by over 5000+ clients. Join them now and grow your business.</h3>
+                    </div>
+                    <!-- /column -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="d-flex justify-content-center">
+                    <span><a class="btn btn-white rounded" href="quickcode.html">Get Quote</a></span>
+                  </div>
+                </div>
+                <!--/.card-body -->
+              </div>
+            
+            <div class="row gy-6 gy-lg-0">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3 class="h2 mb-3">Join the Community</h3>
+                        <p class="lead mb-5">Let's make something great together. We are trusted by over 500+ clients. Join them by using our services and grow your business.</p>
+                        <a href="joinus.html" class="btn btn-primary rounded-pill">Join Us</a>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-4 col-lg-2 offset-lg-2">
+                    <div class="widget">
+                        <h4 class="widget-title mb-3">Need Help?</h4>
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="privacy.html">Support</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-4 col-lg-2">
+                    <div class="widget">
+                        <h4 class="widget-title mb-3">Learn More</h4>
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="quickcode.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-4 col-lg-2">
+                    <div class="widget">
+                        <h4 class="widget-title mb-3">Get in Touch</h4>
+                        <a href="mailto:hello@keryar.com" class="link-body">hello@keryar.com</a><br />
+                        <address><span>India</span><br>
+                                <a href="tel:+91-99132-62167" class="link-body">+91-99132-62167</a><br>
+                                <span>USA</span><br>
+                                <a href="tel:+18324263436" class="link-body">+1 (832) 4263436</a>
+                                <span>United Kingdom</span><br>
+                                <a href="tel:+447436253870" class="link-body">+44 7436 253870</a>
+                            </address>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!--/.row -->
+            <hr class="mt-13 mt-md-15 mb-7" />
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-2 mb-lg-0">© 2023 KERYAR. All rights reserved.</p>
+                <nav class="nav social text-md-end">
+                    <a href="https://twitter.com/KeryarC" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="https://www.facebook.com/keryar22/" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                    <a href="https://in.linkedin.com/company/keryar" target="_blank"><i
+                            class="uil uil-linkedin"></i></a>
+                    <a href="https://www.instagram.com/keryar_com/?hl=en" target="_blank"><i
+                            class="uil uil-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCH42x8APHd3NVp-eSHs_mpw" target="_blank"><i
+                            class="uil uil-youtube"></i></a>
+                </nav>
+                <!-- /.social -->
+            </div>
+            <!-- /div -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"
+            style="margin-left: 0rem !important;">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="src/js/plugins.js"></script>
+    <script src="src/js/scripts.js"></script>
+    <script src="//code.tidio.co/a5yu0h3pt2s8ftongzuovnx6o6jooome.js" async></script>
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6"></script>
+    <script>
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6Lct3FQeAAAAAEs_9SWhc0Cqd_PP_Fh_1ifOffd6', {
+                action: 'login'
+            }).then(function (token) {
+                ...
+            });
+        });
+    </script>
+</body>
+
+</html>
