@@ -5,7 +5,7 @@ RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
 # Add .html extension if the file exists
-RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteCond %{REQUEST_FILENAME}.html -f 
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 # Custom error pages

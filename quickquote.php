@@ -211,5 +211,5 @@ if(!$mail->send()) { 	?>
 }
 ?>
 <script language="javascript">
-  window.open("index.html","_self");
+  window.open("https://keryar.com/","_self");
 </script>
