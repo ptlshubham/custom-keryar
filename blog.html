@@ -263,7 +263,7 @@
             <div class="container pb-14 pb-md-16">
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
-                        <div class="blog classic-view mt-n17">
+                        <div class="blog classic-view mt-n17" id="#blog">
                             <div class="row isotope gx-md-8 gy-8 mb-8">
                                 <article class="item post col-md-12">
                                     <div class="card">
@@ -313,6 +313,7 @@
                                 </article>
                             </div>
                         </div>
+
                         <!-- /.blog -->
                         <div class="blog grid grid-view">
                             <div class="row isotope gx-md-8 gy-8 mb-8">
@@ -426,10 +427,6 @@
                                     <!-- /.card -->
                                 </article>
                             </div>
-                        </div>
-                        <!-- /.blog -->
-                        <div class="blog grid grid-view">
-
                             <div class="row isotope gx-md-8 gy-8 mb-8">
                                 <!-- /.post -->
 
@@ -1694,8 +1691,46 @@
                                     </div>
                                     <!-- /.card -->
                                 </article>
+                                <article class="item post col-md-4">
+                                    <div class="card">
+                                        <figure class="card-img-top overlay overlay1 hover-scale">
+                                            <a
+                                                href="blog/Tips-for-Professional-a-Website.html">
+                                                <img src="blog/src/img/k1.jpg"
+                                                    alt="Tips for Professional a Website" /></a>
+                                            <figcaption>
+                                                <h5 class="from-top mb-0">Read More</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="card-body">
+                                            <div class="post-header">
+                                                <p>26 September, 2023 </p>
+                                                <!-- /.post-category -->
+                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                        href="blog/Tips-for-Professional-a-Website.html">Tips for Professional a Website</a>
+                                                </h2>
+                                            </div>
+                                            <div class="post-content">
+                                                <p>Making a DIY (DIY) website offers a variety of advantages. You are in control of your site. You can personalize it to your liking and also save money. However, constructing DIY sites that appear professional and are competitive with <strong>professionally looking websites</strong> is only manageable with instruction.
+                                                    If you are willing to spend the time to learn some of the best web design techniques, your website will look stunning. It is easy to implement most of these suggestions, especially when using WordPress.
+                                                    <a href="blog/Tips-for-Professional-a-Website.html"
+                                                        class="more hover link-blue">Learn
+                                                        More</a>
+                                                </p>
+
+                                            </div>
+                                            <!-- /.post-content -->
+                                        </div>
+                                    </div>
+                                    <!-- /.card -->
+                                </article>
                             </div>
                         </div>
+                        <!-- pagination -->
+                        <!-- Pagination controls will be added here -->
+                        <div class="pagination d-flex gap-1 justify-content-center" id="pagination">
+                            
+                          </div>
                         <!-- /.blog -->
 
                     </div>
@@ -1824,4 +1859,52 @@
 
 </body>
 
+
+<!-- blog pagination js -->
+<!-- <script>
+    $(document).ready(function () {
+      const blogContainer = $('.blog.grid-view');
+      const isotopeContainers = blogContainer.children('.row.isotope');
+      const pagination = $('#pagination');
+      const isotopePerPage = 1; // Number of isotopes (groups of three cards) per page
+      const totalIsotopes = isotopeContainers.length;
+      let currentPage = 1;
+  
+      function showPage(pageNumber) {
+        const startIndex = (pageNumber - 1) * isotopePerPage;
+        const endIndex = startIndex + isotopePerPage;
+  
+        isotopeContainers.hide().slice(startIndex, endIndex).show();
+      }
+  
+      function updatePagination() {
+        pagination.empty();
+        const totalPages = Math.ceil(totalIsotopes / isotopePerPage);
+  
+        for (let i = 1; i <= totalPages; i++) {
+          const pageLink = $('<span  style="padding: 0 0.3rem;cursor: pointer;">').text(i);
+            if (i === currentPage) {
+          // Add a CSS class for the active page
+             pageLink.addClass('active-blog');
+             }   
+          pageLink.click(function () {
+            currentPage = i;
+            showPage(currentPage);
+          });
+  
+          pagination.append(pageLink);
+        }
+      }
+  
+      showPage(currentPage);
+      updatePagination();
+    });
+  </script> -->
+  <style>
+    span.active-blog{
+        background: #54a8c7;
+        color: white;
+        border-radius: 5px;
+    }
+  </style>
 </html>
