@@ -16,6 +16,7 @@ require './PHPMailer.php';
     $form_lastname = $_REQUEST['lname'];
     $contact_email = $_REQUEST['contact_email'];
     $contact_cname = $_REQUEST['contact_cname'];
+    $contact_help = $_REQUEST['contact_help'];
     $contact_message = $_REQUEST['contact_message'];
     $contact_phone = $_REQUEST['contact_phone'];
     
@@ -129,6 +130,7 @@ require './PHPMailer.php';
                                                                                      <li><strong>Email</strong> -'. $contact_email.'</li>
                                                                                      <li><strong>Phone Number</strong> - '.$contact_phone.'</li>
                                                                                      <li><strong>Company Name</strong> -'. $contact_cname.'</li>
+                                                                                     <li><strong>Help</strong> -'. $contact_help.'</li>
                                                                                      <li><strong>Message</strong> -'. $contact_message.'</li>'.$html_for_cer.'
                                                                                      *Agree to our terms and
                                                                                      conditions, privacy-agreement Your Information will be kept private.
